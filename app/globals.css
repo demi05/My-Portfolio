@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: theme("colors.green.DEFAULT");
+  color: white;
+}
+
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll instead */
+}
+
+body {
+  background: theme("colors.paper");
+  color: theme("colors.ink");
+}
+
+.caret {
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.blob {
+  background: conic-gradient(
+    from 90deg,
+    theme("colors.green.DEFAULT"),
+    theme("colors.indigo.DEFAULT"),
+    theme("colors.coral.DEFAULT"),
+    theme("colors.amber.DEFAULT"),
+    theme("colors.green.DEFAULT")
+  );
+  filter: blur(120px);
+  animation: spin 26s linear infinite;
+}
+@keyframes spin {
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret,
+  .blob {
+    animation: none !important;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom cursor: only applied once CustomCursor.tsx confirms a fine pointer
+   and no reduced-motion preference, so we never hide the system cursor
+   without providing a replacement. */
+.custom-cursor,
+.custom-cursor a,
+.custom-cursor button {
+  cursor: none !important;
+}
+
+/* Custom scrollbar replaces the native one (still fully scrollable, just
+   visually hidden — see components/ScrollProgress.tsx for the real thing) */
+html {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Lenis */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
