@@ -2,7 +2,7 @@
 
 import { forwardRef } from "react";
 
-type Accent = "green" | "indigo" | "amber";
+type Accent = "green" | "indigo" | "amber" | "pink";
 
 const ACCENT_CLASSES: Record<
   Accent,
@@ -26,6 +26,12 @@ const ACCENT_CLASSES: Record<
     hoverText: "hover:text-amber hover:border-amber",
     placeholder: "bg-amber-tint",
   },
+  pink: {
+    bar: "bg-pink",
+    chip: "bg-pink-tint text-pink",
+    hoverText: "hover:text-pink hover:border-pink",
+    placeholder: "bg-pink-tint",
+  },
 };
 
 export interface ProjectData {
@@ -33,7 +39,7 @@ export interface ProjectData {
   tag: string;
   desc: string;
   added: string[];
-  removed: string[];
+  removed?: string[];
   href: string;
   url: string;
   accent: Accent;
@@ -124,7 +130,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
                 + {a}
               </span>
             ))}
-            {project.removed.map((r) => (
+            {project.removed?.map((r) => (
               <span
                 key={r}
                 className="font-mono text-[11px] px-2 py-0.5 rounded-full bg-ink/[0.04] text-ink/35 line-through"

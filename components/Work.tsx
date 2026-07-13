@@ -44,6 +44,18 @@ const PROJECTS: ProjectData[] = [
     imageSrc: "projects/functionalHub.png",
     imageAlt: "Functional Hub screenshot",
   },
+  {
+    file: "GlobalRangeFarms.tsx",
+    tag: "Global Range Farms",
+    desc: "A responsive website for a sustainable agriculture company, showcasing their products and services.",
+    added: ["Next", "Tailwind", "Tailwind CSS"],
+    // removed: ["scattered resource links"],
+    href: "https://www.globalrangefarms.com.ng",
+    url: "globalrangefarms.com.ng",
+    accent: "pink",
+    imageSrc: "projects/globalRangeFarms.png",
+    imageAlt: "Global Range Farms screenshot",
+  },
 ];
 
 const STICK_TOP_BASE = 84;
