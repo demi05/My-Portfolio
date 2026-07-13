@@ -78,3 +78,27 @@ html.lenis, html.lenis body {
 .lenis.lenis-stopped {
   overflow: hidden;
 }
+
+/* Print: strip everything decorative/JS-driven and let content flow
+   normally. Anything with Tailwind's `fixed` utility (cursor, custom
+   scrollbar, command palette, modals) gets hidden here; `nav` and `.blob`
+   are targeted explicitly since they don't use that class. */
+@media print {
+  nav,
+  .blob,
+  .fixed {
+    display: none !important;
+  }
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+  * {
+    box-shadow: none !important;
+    cursor: auto !important;
+  }
+}

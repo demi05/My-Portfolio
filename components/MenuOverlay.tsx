@@ -16,9 +16,11 @@ const DEFAULT_BG = "#17181A";
 export default function MenuOverlay({
   open,
   onClose,
+  onOpenResume,
 }: {
   open: boolean;
   onClose: () => void;
+  onOpenResume: () => void;
 }) {
   const overlayRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -110,6 +112,15 @@ export default function MenuOverlay({
           >
             <Mail size={15} /> demiladeleshi@gmail.com
           </a>
+          <button
+            onClick={() => {
+              onOpenResume();
+              onClose();
+            }}
+            className="hover:text-[#F3F1E9] transition-colors"
+          >
+            resume
+          </button>
         </div>
         <div className="flex items-center gap-5">
           <a href="#" className="hover:text-[#F3F1E9] transition-colors inline-flex items-center gap-2">

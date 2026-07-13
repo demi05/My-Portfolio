@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import MenuOverlay from "./MenuOverlay";
 
-export default function Nav() {
+export default function Nav({ onOpenResume }: { onOpenResume: () => void }) {
   const [open, setOpen] = useState(false);
   const topBar = useRef<SVGLineElement>(null);
   const midBar = useRef<SVGLineElement>(null);
@@ -27,7 +27,7 @@ export default function Nav() {
       <nav className="sticky top-0 z-50 backdrop-blur bg-paper/90 border-b border-line">
         <div className="max-w-[960px] mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="font-mono text-sm font-semibold tracking-tight">
-            leshi.dev
+            demi.dev
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
@@ -43,7 +43,7 @@ export default function Nav() {
           </button>
         </div>
       </nav>
-      <MenuOverlay open={open} onClose={() => setOpen(false)} />
+      <MenuOverlay open={open} onClose={() => setOpen(false)} onOpenResume={onOpenResume} />
     </>
   );
 }

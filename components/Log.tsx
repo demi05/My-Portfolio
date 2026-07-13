@@ -37,9 +37,14 @@ export default function Log() {
 
   return (
     <section id="log" className="max-w-[960px] mx-auto px-6 py-20">
-      <div className="flex items-baseline justify-between mb-10 sm:pl-14">
-        <h2 className="text-2xl font-[800] tracking-tight">Log</h2>
-        <span className="font-mono text-xs text-ink/50">git log --oneline</span>
+      <div className="mb-10 sm:pl-14">
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-2xl font-[800] tracking-tight">Log</h2>
+          <span className="font-mono text-xs text-ink/50">git log --oneline</span>
+        </div>
+        <p className="text-sm text-ink/55 mt-2 max-w-md">
+          Work history.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-[56px_1fr]">

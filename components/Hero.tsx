@@ -81,7 +81,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div ref={rootRef} className="relative pt-24 pb-18 overflow-hidden">
+    <div ref={rootRef} className="relative pt-24 pb-14 overflow-hidden">
       <div className="max-w-[960px] mx-auto px-6">
       <div
         className="blob pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full opacity-[0.16]"
@@ -90,7 +90,7 @@ export default function Hero() {
       <div className="relative z-[1]">
         <div className="hero-eyebrow flex items-center gap-2 text-sm font-mono text-green mb-6">
           <span>&gt;_</span>
-          <span>~/leshi — main</span>
+          <span>~/demi — main</span>
         </div>
 
         <h1 className="text-[44px] sm:text-[80px] font-[900] tracking-tight leading-[0.98]">
@@ -111,9 +111,11 @@ export default function Hero() {
 
         <p className="hero-lede max-w-[560px] mt-5 text-ink/70 leading-relaxed">
           Frontend developer building production interfaces with React,
-          Next.js, and TypeScript. Most recently shipped Chatter, a
-          full-stack publishing platform, solo, in 10 days.
+          Next.js, and TypeScript. 
         </p>
+{/*           
+          Most recently shipped Chatter, a
+          full-stack publishing platform, solo, in 10 days. */}
 
         <div className="hero-cta flex flex-wrap items-center gap-3 mt-9">
           <a
