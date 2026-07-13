@@ -32,10 +32,13 @@ export default function Stack() {
 {`{
   `}<span className="text-[#E8E6DD]/35">{`// languages & frameworks`}</span>{`
   `}<span className="text-[#9FA6AE]">{`"dependencies"`}</span>{`: {
+    `}<span className="text-[#9FA6AE]">{`"javascript"`}</span>{`: `}<span className="text-green">{`"^6.0.0"`}</span>{`,
     `}<span className="text-[#9FA6AE]">{`"react"`}</span>{`: `}<span className="text-green">{`"^19.0.0"`}</span>{`,
-    `}<span className="text-[#9FA6AE]">{`"next"`}</span>{`: `}<span className="text-green">{`"^15.0.0"`}</span>{`,
     `}<span className="text-[#9FA6AE]">{`"typescript"`}</span>{`: `}<span className="text-green">{`"^5.0.0"`}</span>{`,
-    `}<span className="text-[#9FA6AE]">{`"tailwindcss"`}</span>{`: `}<span className="text-green">{`"^3.4.0"`}</span>{`,
+    `}<span className="text-[#9FA6AE]">{`"next"`}</span>{`: `}<span className="text-green">{`"^15.0.0"`}</span>{`,
+    `}<span className="text-[#9FA6AE]">{`"tailwindcss"`}</span>{`: `}<span className="text-green">{`"^4.1.0"`}</span>{`,
+    `}<span className="text-[#9FA6AE]">{`"chakra-ui"`}</span>{`: `}<span className="text-green">{`"^3.1.0"`}</span>{`,
+    `}<span className="text-[#9FA6AE]">{`"gsap"`}</span>{`: `}<span className="text-green">{`"^3.15.0"`}</span>{`,
     `}<span className="text-[#9FA6AE]">{`"@supabase/supabase-js"`}</span>{`: `}<span className="text-green">{`"^2.0.0"`}</span>{`,
     `}<span className="text-[#9FA6AE]">{`"@tiptap/react"`}</span>{`: `}<span className="text-green">{`"^2.0.0"`}</span>{`,
     `}<span className="text-[#9FA6AE]">{`"recharts"`}</span>{`: `}<span className="text-green">{`"^2.0.0"`}</span>{`

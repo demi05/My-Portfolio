@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const PROJECTS: ProjectData[] = [
   {
     file: "chatter.tsx",
-    tag: "AltSchool Africa Capstone · solo · 10 days",
+    tag: "AltSchool Africa Capstone",
     desc: "A text-first publishing platform. Rich-text editor with autosave, OAuth, row-level security, a realtime feed, and a creator analytics dashboard.",
     added: ["Next.js 15", "TypeScript", "Supabase", "Tiptap", "Recharts"],
     removed: ["templates", "guesswork"],

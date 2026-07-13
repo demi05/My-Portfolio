@@ -105,7 +105,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
 
         <div className="flex items-center justify-between px-5 py-2.5 border-b border-line">
           <span className="font-mono text-sm font-medium">{project.file}</span>
-          <span className="font-mono text-[11px] text-ink/45">{project.tag}</span>
+          <span className="font-mono text-[10px] md:text-[11px] text-ink/45">{project.tag}</span>
         </div>
 
         <div className="px-5 py-4">

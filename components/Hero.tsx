@@ -4,7 +4,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Github, Linkedin } from "lucide-react";
 
-const TYPED_TEXT = "frontend engineer. ships fast, ships clean.";
+const TYPED_TEXT = "frontend engineer.";
 
 function useTypewriter(text: string, speed = 34, startDelay = 900) {
   const [out, setOut] = useState("");
@@ -110,7 +110,7 @@ export default function Hero() {
         </div>
 
         <p className="hero-lede max-w-[560px] mt-5 text-ink/70 leading-relaxed">
-          Frontend developer building production interfaces with React,
+          Frontend developer building scalable architectures for production interfaces with React,
           Next.js, and TypeScript. 
         </p>
 {/*           
