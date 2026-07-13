@@ -110,8 +110,7 @@ export default function Hero() {
         </div>
 
         <p className="hero-lede max-w-[560px] mt-5 text-ink/70 leading-relaxed">
-          Frontend developer building scalable architectures for production interfaces with React,
-          Next.js, and TypeScript. 
+          Frontend Developer building scalable architectures and seamless production interfaces with React, Next.js, and TypeScript. 
         </p>
 {/*           
           Most recently shipped Chatter, a
