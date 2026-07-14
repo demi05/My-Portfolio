@@ -67,7 +67,7 @@ export default function Log() {
           <span className="font-mono text-xs text-ink/50">git log --oneline</span>
         </div>
         <p className="text-sm text-ink/55 mt-2 max-w-md">
-          Work history, formatted the way I keep everything else: a running commit log, most recent first.
+          Work history!
         </p>
       </div>
 

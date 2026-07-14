@@ -7,8 +7,7 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-[800] tracking-tight mb-3">Let&apos;s talk</h2>
           <p className="max-w-[360px] text-ink/70 leading-relaxed text-[14.5px]">
-            Open to frontend developer and internship roles. Reach out —
-            I read everything myself.
+            Open to frontend developer and internship roles. Feel free to reach out!
           </p>
         </div>
         <div className="font-mono text-sm flex flex-col gap-2.5">
