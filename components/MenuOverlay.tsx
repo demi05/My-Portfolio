@@ -123,10 +123,10 @@ export default function MenuOverlay({
           </button>
         </div>
         <div className="flex items-center gap-5">
-          <a href="#" className="hover:text-[#F3F1E9] transition-colors inline-flex items-center gap-2">
-            <Github size={15} /> github.com/demi05
+          <a href="https://github.com/demi05" target="_blank" className="hover:text-[#F3F1E9] transition-colors inline-flex items-center gap-2">
+            <Github size={15} /> github
           </a>
-          <a href="#" className="hover:text-[#F3F1E9] transition-colors inline-flex items-center gap-2">
+          <a href="https://www.linkedin.com/in/demiladeleshi276/" target="_blank" className="hover:text-[#F3F1E9] transition-colors inline-flex items-center gap-2">
             <Linkedin size={15} /> linkedin
           </a>
         </div>

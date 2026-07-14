@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-[800] tracking-tight mb-3">Let&apos;s talk</h2>
           <p className="max-w-[360px] text-ink/70 leading-relaxed text-[14.5px]">
-            Open to frontend developer and internship roles. Feel free to reach out!
+            Open to frontend developer roles. Kindly reach out!
           </p>
         </div>
         <div className="font-mono text-sm flex flex-col gap-2.5">
@@ -17,10 +17,10 @@ export default function Footer() {
           >
             <Mail size={14} /> demiladeleshi@gmail.com
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-green transition-colors w-fit">
+          <a href="https://github.com/demi05" target="_blank" className="flex items-center gap-2 hover:text-green transition-colors w-fit">
             <Github size={14} /> github.com/demi05
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-green transition-colors w-fit">
+          <a href="https://www.linkedin.com/in/demiladeleshi276/" target="_blank" className="flex items-center gap-2 hover:text-green transition-colors w-fit">
             <Linkedin size={14} /> linkedin.com/in/demiladeleshi276
           </a>
         </div>

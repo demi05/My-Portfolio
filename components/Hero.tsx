@@ -126,14 +126,16 @@ export default function Hero() {
           </a>
           <a
             ref={btn2}
-            href="#"
+            href="https://github.com/demi05"
+            target="_blank"
             className="px-5 py-3 rounded-lg border border-line text-sm font-semibold hover:border-ink transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green flex items-center gap-1.5"
           >
             <Github size={15} /> GitHub
           </a>
           <a
             ref={btn3}
-            href="#"
+            href="https://www.linkedin.com/in/demiladeleshi276/"
+            target="_blank"
             className="px-5 py-3 rounded-lg border border-line text-sm font-semibold hover:border-ink transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green flex items-center gap-1.5"
           >
             <Linkedin size={15} /> LinkedIn
