@@ -2,7 +2,7 @@
 
 import { forwardRef } from "react";
 
-type Accent = "green" | "indigo" | "amber" | "pink";
+type Accent = "green" | "indigo" | "amber" | "pink" | "red";
 
 const ACCENT_CLASSES: Record<
   Accent,
@@ -32,6 +32,12 @@ const ACCENT_CLASSES: Record<
     hoverText: "hover:text-pink hover:border-pink",
     placeholder: "bg-pink-tint",
   },
+  red:{
+    bar: "bg-red",
+    chip: "bg-red-tint text-red",
+    hoverText: "hover:text-red hover:border-red",
+    placeholder: "bg-red-tint",
+  }
 };
 
 export interface ProjectData {
