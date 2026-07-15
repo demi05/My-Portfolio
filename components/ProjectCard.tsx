@@ -32,12 +32,12 @@ const ACCENT_CLASSES: Record<
     hoverText: "hover:text-pink hover:border-pink",
     placeholder: "bg-pink-tint",
   },
-  red:{
+  red: {
     bar: "bg-red",
     chip: "bg-red-tint text-red",
     hoverText: "hover:text-red hover:border-red",
     placeholder: "bg-red-tint",
-  }
+  },
 };
 
 export interface ProjectData {
@@ -66,11 +66,9 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
     return (
       <div
         ref={ref}
-        className="rounded-xl border border-line bg-paper shadow-[0_16px_44px_-14px_rgba(23,24,26,0.32)]"
-       
+        className="rounded-xl border border-line bg-paper shadow-[0_16px_44px_-14px_rgba(23,24,26,0.32)] "
       >
         <div className={`h-1.5 w-full ${c.bar}`} />
-
         <a
           href={project.href}
           target={hasRealLink ? "_blank" : undefined}
@@ -79,6 +77,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           data-cursor="view"
         >
           {project.imageSrc ? (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={project.imageSrc}
               alt={project.imageAlt}
@@ -89,9 +88,6 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
               className={`absolute inset-2.5 rounded-lg border-[1.5px] border-dashed border-line flex flex-col items-center justify-center gap-2 text-center px-4 ${c.placeholder}`}
             >
               <b className="font-sans font-semibold text-[12.5px] text-ink/70">+ add media</b>
-              {/* {project.mediaHint && (
-                <span className="font-mono text-xs text-ink/45">{project.mediaHint}</span>
-              )} */}
             </div>
           )}
         </a>
@@ -125,14 +121,9 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
             {project.desc}
           </p>
 
-          {/* tech stack as compact wrapped chips instead of one row per
-              item — this is what actually buys back the vertical space */}
           <div className="flex flex-wrap gap-1.5 mt-3">
             {project.added.map((a) => (
-              <span
-                key={a}
-                className={`font-mono text-[11px] px-2 py-0.5 rounded-full ${c.chip}`}
-              >
+              <span key={a} className={`font-mono text-[11px] px-2 py-0.5 rounded-full ${c.chip}`}>
                 + {a}
               </span>
             ))}
